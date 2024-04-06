@@ -1,0 +1,36 @@
+{
+  "name": "se3350-project-group22",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r # CHEER_Project\r =======\r # se3350-project-group22\r >>>>>>> fa918d9c3a85a639aafc754312f61e1ebe5448ec",
+  "main": "index.js",
+  "proxy": "http://localhost:8080",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.3",
+    "express-async-handler": "^1.2.0",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.4.0",
+    "mongoose": "^8.0.1",
+    "node.js": "^0.0.1-security",
+    "path": "^0.12.7",
+    "react-scripts": "^5.0.1",
+    "string-similarity": "^4.0.4",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "node server/backend.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

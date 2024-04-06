@@ -1,0 +1,820 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #F1F1F1; /* Default background color */
+  cursor: none; /* Hide the default cursor */
+}
+
+.dimmed {
+  /* Adjust background color to a semi-transparent overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.dim-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.nav-container {
+  background-color: #333; /* Background color of the navigation */
+  width: 100%;
+  text-align: center;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container ul li {
+  display: inline;
+}
+
+.nav-container ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.nav-container ul li a:hover {
+  background-color: #555; /* Background color on hover */
+}
+
+.button-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.button-container button {
+  width: 65vw;
+  border: none;
+  border-radius: 20px; /* Adjust as needed */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#btn1{
+background-color: lightblue;
+}
+
+#btn2{
+  background-color: lightcoral;
+}
+
+#btn3{
+  background-color: lightgoldenrodyellow;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Yeseva One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*Navbar --------------------------------------------------------- */
+.nav_menu:hover {
+  color: rgb(73, 73, 73);
+}
+
+.nav_open {
+  transition: transform .2s;
+  border: 2px;
+  border-style: solid;
+  border-color: red;
+}
+
+.nav_closed {
+  transform: translate(-100%);
+  transition: transform .2s;
+}
+
+/*Newsletter ----------------------------------------------------- */
+.newsletter-description {
+  background-color: beige;
+  opacity: 90%;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.newsletter-container:hover {
+  opacity: 100%;
+  transform: scale(1.025);
+}
+
+.newsletter-container {
+  background-color: beige;
+  position: relative;
+  opacity: 90%;
+  padding: 1%;
+  transition: transform .2s;
+}
+
+.newsletter-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.standard {
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter_image {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.newsletter_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter_writing {
+  padding: 0 20% 0 20%;
+}
+
+.newsletter_button {
+  margin-left: 15%;
+  width: auto;
+}
+
+.welcomeImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.homeAbout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  border: 1px solid #FFA500;
+}
+
+/*Events and Information ----------------------------------------------------- */
+.events-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 40px;
+}
+
+.gradient-background,
+.date-background {
+  border: 1px black solid;
+}
+
+.gradient-background {
+  width: 1268px;
+  height: 674px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 66px;
+}
+
+.updates-box {
+  width: 394px;
+  height: 82px;
+  left: 423px;
+  top: 541px;
+  position: absolute;
+  background: #F8966A;
+  border-radius: 8px;
+  border: 1px black solid;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-updates,
+.event-title,
+.day-number,
+.month-label,
+.description-box {
+  word-wrap: break-word;
+}
+
+.title-updates,
+.event-title,
+.description-box {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.title-updates,
+.day-number,
+.month-label {
+  font-weight: 700;
+}
+
+.title-updates {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transition: color 0.3s;
+  /* Add a smooth color transition */
+}
+
+.title-updates:hover {
+  color: #000000;
+  /* Change the color on hover */
+}
+
+.event-title {
+  width: 669px;
+  height: 75px;
+  left: 330px;
+  top: 43px;
+  position: absolute;
+  color: #333333;
+  font-size: 48px;
+  font-family: 'Yeseva One', sans-serif;
+  font-weight: 400;
+}
+
+.date-container {
+  width: 305.08px;
+  height: 207px;
+  left: 68px;
+  top: 43px;
+  position: absolute;
+}
+
+.date-background {
+  width: 207px;
+  height: 207px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: #F8966A;
+  border-radius: 58px;
+}
+
+.date-numbers {
+  width: 266.34px;
+  height: 143px;
+  left: 38.74px;
+  top: 30px;
+  position: absolute;
+}
+
+.day-number {
+  width: 75px;
+  height: 76px;
+  left: 0.26px;
+  top: 67px;
+  position: absolute;
+  color: #333333;
+  font-size: 64px;
+  font-family: 'Yeseva One', sans-serif;
+  font-weight: 400;
+}
+
+.month-label {
+  width: 266.34px;
+  height: 143px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  color: #333333;
+  font-size: 64px;
+  font-family: 'Yeseva One', sans-serif;
+  font-weight: 400;
+}
+
+.description-box {
+  width: 854.93px;
+  left: 330px;
+  top: 118px;
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.image-container {
+  width: 1268px;
+  height: 211px;
+  left: 10;
+  top: 294px;
+  position: absolute;
+  border: 1px black solid;
+}
+
+.event-image {
+  width: 1268px;
+  height: 211px;
+  object-fit: cover;
+}
+
+/* EventsForm.css */
+.update-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.background-gradient {
+  width: 512px;
+  height: 675px;
+  right: 0px;
+  /* Adjusted to move the title to the right */
+  top: 0px;
+  position: absolute;
+  background: linear-gradient(180deg, #A7CDF2 0%, rgba(152, 197, 241, 0) 100%);
+  border-radius: 66px;
+  border: 1px black solid;
+}
+
+.title {
+  width: 390px;
+  height: 75px;
+  right: 55px;
+  /* Adjusted to move the title to the right */
+  top: 45px;
+  position: absolute;
+  font-size: 48px;
+  font-family: 'Yeseva One', serif;
+  font-weight: 400;
+}
+
+.subscribe-box {
+  width: 182px;
+  height: 60px;
+  right: 165px;
+  /* Adjusted to move the subscribe-box to the right */
+  top: 565px;
+  position: absolute;
+  background: #F8966A;
+  border-radius: 66px;
+  border: 1px black solid;
+}
+
+.description {
+  width: 420px;
+  left: 1400px;
+  top: 180px;
+  position: absolute;
+  color: black;
+  font-size: 22px;
+  font-family: 'DM Sans';
+}
+
+.name-input {
+  width: 423px;
+  height: 108px;
+  right: 43px;
+  /* Adjusted to move the input container to the right */
+  top: 283px;
+  position: absolute;
+}
+
+.name-input .label {
+  width: 420px;
+  left: 3px;
+  top: 0;
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.name-input .input-box {
+  width: 420px;
+  height: 63px;
+  left: 0;
+  top: 45px;
+  position: absolute;
+  background: white;
+  border-radius: 66px;
+  border: 1px black solid;
+}
+
+.email-input {
+  width: 427px;
+  height: 200px;
+  right: 43px;
+  /* Adjusted to move the input container to the right */
+  top: 411px;
+  position: absolute;
+}
+
+.email-input .label {
+  width: 420px;
+  left: 7px;
+  top: 0;
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.email-input .subscribe-button {
+  width: 175px;
+  left: 130px;
+  top: 150px;
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.subscribe-button {
+  width: 300px;
+  height: 70px;
+  left: 100px;
+  top: 70px;
+  background-color: #F8966A;
+  color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.subscribe-button:hover {
+  background-color: #f0c6b5;
+  /* Change the color on hover */
+}
+
+.email-input .input-box {
+  width: 420px;
+  height: 63px;
+  left: 0;
+  top: 46px;
+  position: absolute;
+  background: white;
+  border-radius: 66px;
+  border: 1px black solid;
+}
+
+/*Login Styling*/
+
+/* #input-textbox label {
+  margin-right: 1%;
+}
+
+#input-textbox {
+  display: flex;
+  flex-direction: column;
+}
+
+#input-textbox input {
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid #4169E1;
+} */
+
+.login-page,
+.register-page {
+  width: 360px;
+  padding: 8% 0 0;
+  /* margin: auto;*/
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4169E1;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #F8966A;
+}
+
+.form a:visited {
+  color: #F8966A;
+}
+
+.form a:active,
+a:hover,
+a:focus {
+  color: #4169E1;
+}
+
+.calendar-container {
+  display: flex;
+  margin-left: 25vw;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.info-box {
+  margin-left: 200px;
+  border-color: 'lightblue';
+  border-radius: 10px;
+  text-align: center; /* Center align the content */
+  background-color: #ffb730; /* Set the background color to yellow */
+  padding: 20px; /* Add some padding for spacing */
+}
+/* button{
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #007acc;
+  border-radius: 5px;
+  background-color: #007acc;
+  transition: background-color 0.3s ease;
+} */
+
+.hidden{
+  background-color: white;
+}
+
+/*Chat Styling ----------------------------------------------------- */
+.ChatApp {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F1F1F1;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+.joinChatContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joinChatContainer h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.joinChatContainer input {
+  width: 210px;
+  height: 40px;
+  margin: 7px;
+  border: 2px solid #ff9925;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.joinChatContainer button {
+  width: 225px;
+  height: 50px;
+  margin: 7px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  background: #ff9925;
+  color: #fff;
+  cursor: pointer;
+}
+
+.joinChatContainer button:hover {
+  background: #42ff4c;
+}
+
+.chat-window {
+  width: 700px;
+  height: 420px;
+}
+
+.chat-window p {
+  margin: 0;
+}
+.chat-window .chat-header {
+  height: 45px;
+  border-radius: 6px;
+  background: #263238;
+  position: relative;
+  cursor: pointer;
+}
+.chat-window .chat-header p {
+  display: block;
+  padding: 0 1em 0 2em;
+  color: #fff;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.chat-window .chat-body {
+  height: calc(450px - (45px + 70px));
+  border: 1px solid #263238;
+  background: #fff;
+  position: relative;
+}
+.chat-window .chat-body .message-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-window .chat-body .message-container::-webkit-scrollbar {
+  display: none;
+}
+.chat-window .chat-body .message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.chat-window .chat-body .message .message-content {
+  width: auto;
+  height: auto;
+  font-weight: 600;
+  min-height: 40px;
+  max-width: 320px;
+  background-color: #ff9925;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#you {
+  justify-content: flex-start;
+}
+
+#you .message-content {
+  justify-content: flex-start;
+}
+
+#you .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#other {
+  justify-content: flex-end;
+}
+
+#other .message-content {
+  font-weight: 600;
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+}
+
+#other .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.chat-window .chat-body .message .message-meta {
+  display: flex;
+  font-size: 12px;
+}
+
+.chat-window .chat-footer {
+  height: 40px;
+  border: 1px solid #263238;
+  border-top: none;
+  display: flex;
+}
+
+.chat-window .chat-footer input {
+  height: 100%;
+  flex: 85%;
+  border: 0;
+  padding: 0 0.7em;
+  font-size: 1em;
+  border-right: 1px dotted #607d8b;
+
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.chat-window .chat-footer button {
+  border: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  flex: 15%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 25px;
+  color: lightgray;
+}
+
+.chat-window .chat-footer button:hover {
+  color: #ff9925;
+}
+
+.hide {
+  opacity: 0 !important;
+}
+
+.event-creation  button {
+  background-color: yellow;
+}
+
+.signUp{
+  background-color: yellow;
+}
+
+.red-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.5); /* Red color with 50% opacity */
+  position: fixed;
+  top: calc(50% - 10px); /* Adjust vertically to position the center of the circle */
+  left: calc(50% - 10px); /* Adjust horizontally to position the center of the circle */
+  pointer-events: none; /* So that the circle doesn't interfere with mouse events */
+}
+
